@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Channel Shift</title>
+<style>
+
+body {
+font-family: "Cambria", serif;
+}
+
+
+#chart {
+  height: 500px;
+}
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Cambria", serif;
+}
+
+.link-confirmation {
+  fill: none;
+  stroke-opacity: .5;
+}
+
+
+.link-confirmation {
+  fill: none;
+  stroke: red;
+  stroke-opacity: .5;
+}
+
+.link-interaction {
+  fill: none;
+  stroke: green;
+  stroke-opacity: .5;
+}
+
+.link-transaction {
+  fill: none;
+  stroke: blue;
+  stroke-opacity: .5;
+}
+
+.link-information {
+  fill: none;
+  stroke: orange;
+  stroke-opacity: .5;
+}
+
+.link-information:hover {
+  stroke-opacity: .7;
+}
+
+.link-transaction:hover {
+  stroke-opacity: .7;
+}
+
+.link-interaction:hover {
+  stroke-opacity: .7;
+}
+
+.link-confirmation:hover {
+  stroke-opacity: .7;
+}
+
+table
+{
+border-spacing:5px;
+}
+
+
+</style>
+<body>
+
+
+
+<table style="width:300px">
+<tr>
+  <td style="background-color:red">Confirmation</td>
+  <td style="background-color:orange">Information</td> 
+  <td style="background-color:green">Interaction</td>
+  <td style="background-color:blue">Transaction</td>
+</tr>
+</table>
+
+
+<p id="chart">
+
+<div id="observablehq-87e25f1a"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/7d05c33aefa0fc79.js?v=3";
+const inspect = Inspector.into("#observablehq-87e25f1a");
+(new Runtime).module(define, name => (name === "chart") && inspect());
+</script>
+ 
+</body>
+</html>
