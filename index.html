@@ -9,7 +9,7 @@ font-family: "Cambria", serif;
 }
 
 
-#chart {
+.chart {
   height: 50%;
 }
 
@@ -90,7 +90,7 @@ border-spacing:5px;
 </table>
 
 
-<div id="chart">
+<div class="chart">
 <div id="observablehq-e12f7388"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -99,5 +99,45 @@ const inspect = Inspector.into("#observablehq-e12f7388");
 (new Runtime).module(define, name => (name === "chart") && inspect());
 </script>
   </div>
+  
+<h3>Final Sankey Motivation</h3>
+<table style="width:100%">
+<tr>
+  <td style="background-color:white"><img src="fb_logo.png" align="left"></td>
+  <td style="background-color:white"><img src="twitter_logo.png" align="right"></td> 
+</tr>
+</table>
+
+
+<div class="chart">  
+  <div id="observablehq-285fc44b"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@lizdao/sankey-diagram/2.js?v=3";
+const inspect = Inspector.into("#observablehq-285fc44b");
+(new Runtime).module(define, name => (name === "chart") && inspect());
+</script>
+    </div>
+  
+  
+  <h3>Final Sankey Solution </h3>
+<table style="width:100%">
+<tr>
+  <td style="background-color:white"><img src="fb_logo.png" align="left"></td>
+  <td style="background-color:white"><img src="twitter_logo.png" align="right"></td> 
+</tr>
+</table>
+
+
+<div class="chart">  
+  <div id="observablehq-285fc44b"></div>
+<div id="observablehq-8ebfa2bb"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@lizdao/sankey-diagram/3.js?v=3";
+const inspect = Inspector.into("#observablehq-8ebfa2bb");
+(new Runtime).module(define, name => (name === "chart") && inspect());
+</script>
+    </div>
 </body>
 </html>
