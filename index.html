@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<title>Channel Shift</title>
+<title>Sankey Diagram</title>
 <style>
 
 body {
@@ -82,17 +82,15 @@ border-spacing:5px;
 
 
 
-<table style="width:300px">
+<table style="width:100%">
 <tr>
-  <td style="background-color:red">Confirmation</td>
-  <td style="background-color:orange">Information</td> 
-  <td style="background-color:green">Interaction</td>
-  <td style="background-color:blue">Transaction</td>
+  <td style="background-color:white">Facebook</td>
+  <td style="background-color:white">Twitter</td> 
 </tr>
 </table>
 
 
-<p id="chart">
+<div id="chart">
 
 <div id="observablehq-87e25f1a"></div>
 <script type="module">
@@ -101,6 +99,6 @@ import define from "https://api.observablehq.com/d/7d05c33aefa0fc79.js?v=3";
 const inspect = Inspector.into("#observablehq-87e25f1a");
 (new Runtime).module(define, name => (name === "chart") && inspect());
 </script>
- 
+  </div>
 </body>
 </html>
